@@ -60,15 +60,8 @@ const QuizWizard = ({ testDetails }: QuizWizardPropsT) => {
           {!isSubmitted && (
             <ButtonTimed
               onClick={handleSubmit}
-              initialTime={questions.length * 120}
-              overrides={{
-                BaseButton: {
-                  style: {
-                    backgroundColor: theme.colors.buttonSecondaryActive,
-                    color: theme.colors.buttonSecondaryText,
-                  },
-                },
-              }}
+              initialTime={questions.length * 60}
+              disabled
             >
               <Block className={css({ marginRight: theme.sizing.scale100 })}>
                 Time Left
