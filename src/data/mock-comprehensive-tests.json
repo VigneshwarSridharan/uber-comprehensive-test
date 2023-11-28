@@ -1,0 +1,52 @@
+[
+  {
+    "UUID": "d36e07b4-2e88-4663-9a33-6a73b01070b6",
+    "name": "Mock Test 1",
+    "description": "Fames ac turpis egestas maecenas. Est sit amet facilisis magna etiam tempor orci eu. Rhoncus est pellentesque elit ullamcorper.",
+
+    "questions": [
+      {
+        "UUID": "c0868222-c5ac-499f-b963-ab9284a1064b",
+        "question": "How many days are there in a week?",
+        "type": "SINGLE_CHOICE",
+        "answer": "7 days",
+        "options": ["7 days", "5 days", "10 days", "30 days"]
+      },
+      {
+        "UUID": "23e3bd22-5dac-45ff-aefd-febf77ed5b6a",
+        "question": "How many letters are there in the English alphabet?",
+        "type": "SINGLE_CHOICE",
+        "answer": "26 letters",
+        "options": ["10 letters", "48 letters", "26 letters", "128 letters"]
+      },
+      {
+        "UUID": "f56dd58e-91e1-4f9d-8f58-420b7ad325d6",
+        "question": "How many vowels are there in the English alphabet and name them?",
+        "type": "TEXT",
+        "answer": "aeiou"
+      }
+    ]
+  },
+  {
+    "UUID": "6635c095-d7a0-4e61-bdfd-b9ad5dfb2baf",
+    "name": "Mock Test 2",
+    "description": "Erat velit scelerisque in dictum. Fames ac turpis egestas maecenas. Est sit amet facilisis magna etiam tempor orci eu. Rhoncus est pellentesque elit ullamcorper.",
+
+    "questions": [
+      {
+        "UUID": "bd14d9f3-45f4-44db-8db0-0b7a6137a8e1",
+        "question": "How many days are there in a week?",
+        "type": "SINGLE_CHOICE",
+        "answer": "7 days",
+        "options": ["7 days", "5 days", "10 days", "30 days"]
+      },
+      {
+        "UUID": "9c4491ed-4f45-4c63-8684-07eb94c393f7",
+        "question": "How many letters are there in the English alphabet?",
+        "type": "SINGLE_CHOICE",
+        "answer": "26 letters",
+        "options": ["10 letters", "48 letters", "26 letters", "128 letters"]
+      }
+    ]
+  }
+]
