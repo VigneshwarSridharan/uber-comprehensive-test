@@ -1,7 +1,7 @@
 import * as React from "react";
 import { AppNavBar, setItemActive, NavItem } from "baseui/app-nav-bar";
 import { PAGES } from "../constants";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "fusion-plugin-react-router";
 
 const Header = () => {
   const navigate = useNavigate();

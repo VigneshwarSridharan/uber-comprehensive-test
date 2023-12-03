@@ -1,7 +1,7 @@
 import { Button } from "baseui/button";
 import { Card, StyledAction, StyledBody } from "baseui/card";
 import comprehensiveTestList from "../../../data/mock-comprehensive-tests.json";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "fusion-plugin-react-router";
 import { PAGES } from "../../../constants";
 
 const TestList = () => {

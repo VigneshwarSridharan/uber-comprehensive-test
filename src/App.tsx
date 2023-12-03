@@ -1,31 +1,33 @@
-import "./styles.css";
-import { Routes, BrowserRouter, Route } from "react-router-dom";
+import { Routes, Route } from "fusion-plugin-react-router";
 import { PAGES } from "./constants";
 import HomePage from "./pages/HomePage";
 import ComprehensiveTestPage from "./pages/ComprehensiveTestPage";
 
-import { Client as Styletron } from "styletron-engine-atomic";
-import { Provider as StyletronProvider } from "styletron-react";
 import { LightTheme, BaseProvider } from "baseui";
 import Header from "./layout/Header";
+import { Helmet } from "fusion-plugin-react-helmet-async";
+import { assetUrl } from "fusion-core";
 
-const engine = new Styletron();
+const styles = assetUrl('./styles.css')
 
 export default function App() {
   return (
-    <StyletronProvider value={engine}>
+    <div>
+      <Helmet>
+        <title>Uber Comprehensive Test</title>
+        <link rel="stylesheet" type="text/css" href={styles} />
+        
+      </Helmet>
       <BaseProvider theme={LightTheme}>
-        <BrowserRouter>
-          <Header />
-          <Routes>
-            <Route path={PAGES.HOME_PAGE} Component={HomePage} />
-            <Route
-              path={PAGES.COMPREHENSIVE_TEST_PAGE + "/:UUID"}
-              Component={ComprehensiveTestPage}
-            />
-          </Routes>
-        </BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path={PAGES.HOME_PAGE} element={<HomePage />} />
+          <Route
+            path={PAGES.COMPREHENSIVE_TEST_PAGE + "/:UUID"}
+            element={<ComprehensiveTestPage />}
+          />
+        </Routes>
       </BaseProvider>
-    </StyletronProvider>
+    </div>
   );
 }

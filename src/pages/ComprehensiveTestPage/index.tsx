@@ -1,5 +1,5 @@
 import { Block, BlockOverrides } from "baseui/block";
-import { useParams } from "react-router-dom";
+import { useParams } from "fusion-plugin-react-router";
 import comprehensiveTestList from "../../data/mock-comprehensive-tests.json";
 import QuizWizard from "./components/QuizWizard";
 
