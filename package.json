@@ -9,24 +9,32 @@
   ],
   "main": "src/index.tsx",
   "dependencies": {
+    "@koa/bodyparser": "^5.0.0",
+    "appwrite": "^13.0.1",
+    "async_hooks": "^1.0.0",
     "baseui": "^13.0.0",
     "fusion-cli": "^2.39.1",
     "fusion-core": "^2.11.0",
+    "fusion-plugin-i18n": "^2.8.7",
     "fusion-plugin-react-helmet-async": "^2.6.6",
     "fusion-plugin-react-router": "^3.5.8",
+    "fusion-plugin-rpc": "^4.2.8",
     "fusion-plugin-styletron-react": "^3.6.6",
     "fusion-plugin-universal-events": "^2.6.8",
     "fusion-react": "^4.8.7",
     "fusion-tokens": "^3.0.2",
+    "koa-bodyparser": "^4.4.1",
     "loader-utils": "3.2.1",
     "react": "18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "6.20.0",
     "react-scripts": "5.0.1",
     "styletron-engine-atomic": "^1.6.2",
-    "styletron-react": "^6.1.1"
+    "styletron-react": "^6.1.1",
+    "unfetch": "^5.0.0"
   },
   "devDependencies": {
+    "@types/koa-bodyparser": "^4.3.12",
     "@types/react": "18.2.37",
     "@types/react-dom": "18.2.15",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
@@ -42,11 +50,5 @@
     "test": "fusion test",
     "build": "fusion build",
     "start": "fusion start"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  }
 }

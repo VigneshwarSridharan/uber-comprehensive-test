@@ -7,6 +7,7 @@ import { LightTheme, BaseProvider } from "baseui";
 import Header from "./layout/Header";
 import { Helmet } from "fusion-plugin-react-helmet-async";
 import { assetUrl } from "fusion-core";
+import AuthPage from "./pages/AuthPage";
 
 const styles = assetUrl('./styles.css')
 
@@ -16,11 +17,12 @@ export default function App() {
       <Helmet>
         <title>Uber Comprehensive Test</title>
         <link rel="stylesheet" type="text/css" href={styles} />
-        
+
       </Helmet>
       <BaseProvider theme={LightTheme}>
         <Header />
         <Routes>
+          <Route path={PAGES.AUTH_PAGE} element={<AuthPage />} />
           <Route path={PAGES.HOME_PAGE} element={<HomePage />} />
           <Route
             path={PAGES.COMPREHENSIVE_TEST_PAGE + "/:UUID"}
